@@ -7,24 +7,26 @@ oversees from the dashboard.
 ## Install
 
 ```sh
-npx skills add runnn-io/skills
+npx skills add runnn-io/skills -g --all
 ```
 
-Works with Claude Code, Codex, Cursor and every other agent the
-[skills CLI](https://github.com/vercel-labs/skills) supports.
+Non-interactive: `-g` installs user-level, `--all` selects every skill
+and every agent the [skills CLI](https://github.com/vercel-labs/skills)
+detects (Claude Code, Codex, Cursor and the rest) with no prompts.
 
 ## Skills
 
-- **runnn** — build, deploy and maintain business automations on a
-  Runnn workspace. Job-first working practice, session ritual, and the
-  guardrails (dry-green gate, nothing leaves without a yes). The live
-  platform contract is always fetched fresh from
-  [`/api/v1/docs`](https://app.runnn.io/api/v1/docs), never baked in.
+- **runnn** — deliberately tiny: a trigger plus a pointer. It teaches
+  your agent that Runnn exists and where everything true lives — the
+  index at [`app.runnn.io/api/v1`](https://app.runnn.io/api/v1) and the
+  contract and working practice at
+  [`/api/v1/docs`](https://app.runnn.io/api/v1/docs), always fetched
+  fresh, never baked in.
 
 ## Versioning
 
 The canonical source lives in the platform monorepo and is synced here
-automatically on every change. The API index at
-[`app.runnn.io/api/v1`](https://app.runnn.io/api/v1) reports the current
-published version in its `skill` block; the skill checks it at session
-start and asks to be reinstalled when it is stale.
+automatically on every change. Because the skill is a pointer, it
+should almost never change; all real evolution ships server-side with
+the platform. The API index reports the published version in its
+`skill` block.
