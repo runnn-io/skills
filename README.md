@@ -1,7 +1,7 @@
-# Runnn agent skills
+# Autobase agent skills
 
-[Runnn](https://runnn.io) runs business automations built by AI coding
-agents. The agent builds and maintains, Runnn runs, and the human
+[Autobase](https://autobase.so) runs business automations built by AI coding
+agents. The agent builds and maintains, Autobase runs, and the human
 oversees from the dashboard.
 
 ## Install
@@ -16,11 +16,11 @@ detects (Claude Code, Codex, Cursor and the rest) with no prompts.
 
 ## Skills
 
-- **runnn** — deliberately tiny: a trigger plus a pointer. It teaches
-  your agent that Runnn exists and where everything true lives — the
-  index at [`app.runnn.io/api/v1`](https://app.runnn.io/api/v1) and the
+- **autobase** — deliberately tiny: a trigger plus a pointer. It teaches
+  your agent that Autobase exists and where everything true lives — the
+  index at [`app.autobase.so/api/v1`](https://app.autobase.so/api/v1) and the
   contract and working practice at
-  [`/api/v1/docs`](https://app.runnn.io/api/v1/docs), always fetched
+  [`/api/v1/docs`](https://app.autobase.so/api/v1/docs), always fetched
   fresh, never baked in.
 
 ## Versioning
