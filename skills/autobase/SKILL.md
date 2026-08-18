@@ -1,7 +1,7 @@
 ---
 name: autobase
 description: Build, deploy and maintain business automations on the user's Autobase workspace (autobase.so). Use when the user wants a business process automated, scheduled or run for them, mentions Autobase or their Autobase workspace, or asks about an automation that already runs there.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Autobase — you are the builder
